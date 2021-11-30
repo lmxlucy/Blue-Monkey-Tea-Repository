@@ -1,0 +1,291 @@
+body {
+    font-family: "helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 100%;
+    line-height: 1.7em;
+    color: #000000;
+}
+#cover {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+#cover h1 {
+    padding: 100px 0 50px;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    font-size: 50px;
+    font-family: Georgia, serif;
+}
+
+#cover nav {
+    position: absolute;
+    margin-top: 1%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+#cover nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #bbbebe;
+    padding: 20px;
+}
+
+#cover nav a.selected {
+    color: white;
+}
+
+#cover nav a:hover {
+    color: white;
+}
+
+#container {
+    width:100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#content {
+    width: 70%;
+    padding: 1em;
+    margin: auto;
+    color: rgb(85, 84, 84);
+}
+
+#content h4 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#content h3 {
+    margin-top: 30px;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#content p {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: .8px;    
+    word-spacing: 1px;
+    line-height:30px;
+    font-size: 20px;
+}
+
+#content form {
+    font-size: 14px;
+    position: relative;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#content form #submit {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+}
+
+#content form #submit:hover,
+#content form #submit:focus {
+    background-color: #bbbebe;
+    color: white;
+  }
+
+#lightbox {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+#lightbox td {
+    border-style: none;
+}
+
+#lightbox img {
+    width: 100%;
+}
+
+iframe {
+    width: 55%;
+    padding: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#store_info {
+    width: 40%;
+    border-style: solid;
+    border-width: 2px;
+    border-spacing: 3px;
+    border-color: gray;
+    border-collapse: collapse;
+    float: right;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#store_info th, td {
+    border: 1px solid #bbbebe;
+    font-size: small;
+    text-align: center;
+    padding: 2px;
+}
+
+#store_info th {
+    height: 40px;
+    font-weight: bold;
+}
+
+#store_info a {
+    text-decoration: underline;
+    color: rgb(85, 84, 84);
+}
+
+#store_info a:hover {
+    text-decoration-line: underline;
+    color: gray;
+}
+
+#container-graph {
+    width: 55%;
+    height: 320px;
+    float: left;
+    padding: 3px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#operation_hours {
+    width: 40%;
+    border-style: solid;
+    border-width: 2px;
+    border-spacing: 3px;
+    border-color: gray;
+    border-collapse: collapse;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#operation_hours th, td {
+    border: 1px solid #bbbebe;
+    font-size: small;
+    text-align: center;
+    padding: 2px;
+}
+
+#operation_hours th {
+    height: 40px;
+    font-weight: bold;
+}
+
+#update {
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+#update p {
+    font-size: 18px;
+    font-family: "helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+#update ul {
+    font-family: "helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#update li {
+    font-family: "helvetica Neue", Helvetica, Arial, Sans-serif;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+#teas {
+    Float: left;
+    height: 415px;
+    width: 40%;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    border-style: none;
+}
+
+#coffees {
+    float: right;
+    height: 170px;
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-style: none;
+}
+
+#teablends {
+    float: right;
+    height: 190px;
+    width: 40%;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    border-style: none;
+}
+
+#gallery th {
+    border: 2px solid gray;
+    font-size: medium;
+    text-align: center;
+    padding: 3px;
+    height: 40px;
+    font-weight: bold;
+}
+
+#content img {
+    margin: 1em;
+}
+
+#logo img {
+    float: left;
+    width: 100px;
+    margin-left: 5px;
+}
+
+footer {
+    clear: both;
+    padding: 1em;
+    color: #333333;
+    font-variant: small-caps;
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px solid #d7dada;
+}
+
+footer img{
+    margin: 8px;
+}
+
+html {
+    overflow-y: scroll;
+}
+

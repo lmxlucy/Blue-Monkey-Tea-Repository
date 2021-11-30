@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <!-- jqury library -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <meta charset = "utf-8" />
+    <meta name = "creator" content = "Lucy Li">
+    <meta name = "keywords" content = "Blue Monkey Tea Pittsburgh">
+    <meta name = "description" content = "Blue Monkey Tea Pittsburgh official website">
+    <title>Blue Monkey Tea Pittsburgh</title>
+</head>
+
+<body>
+<div id="container">
+    <!-- image under public domain license from https://www.publicdomainpictures
+        .net/en/view-image.php?image=268493&picture=herbal-tea -->
+    <header id="cover" style="background-image: url('images/cover.jpg')">
+        <div id="overlay">
+            <h1>Contact Us</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="product.html">Product</a>
+                <a class="selected" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="content">
+        <br><br>
+        <p>Want to get in touch with us? Fill out the form below</p>
+        <form action="mailto:100teacups@gmail.com" method="post" enctype="text/plain">                              
+            <label for="name">Name</label>
+            <input type="text" class="form-control" placeholder="Name" 
+            id="name" name="name" minlength="1" maxlength="30" required>
+            <p></p>
+
+            <label for="zipcode">Zipcode</label>
+            <input type="text" class="form-control" placeholder="#####" 
+            id="zipcode" name="zipcode" pattern="[0-9]*" minlength="5" maxlength="5">
+            <p></p>
+
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" placeholder="Email Address"
+            id="email" name="email" minlength="5" maxlength="50" required>
+            <p></p>
+
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Check box if you would like to subscribe to 
+                Blue Monkey Tea’s coupon weekly flyer</label>
+            <p></p>
+            <input type="submit" id="submit" value="Send">
+        </form><br><br>
+    </div>
+
+    <footer>
+        &copy; Blue Monkey Tea<br/>
+        <!-- Icons images from free graphic design resource 
+        http://www.newdesignfile.com/post_facebook-twitter-instagram-pinterest-icons_208975/ -->
+        <a href="https://www.facebook.com/TeaPittsburgh/">
+            <img src="images/facebook.png" width="3%" height="3%" alt="Facebook"/></a>
+        <a href="https://www.instagram.com/bluemonkeytea/">
+            <img src="images/instagram.png" width="3%" height="3%" alt="Instagram"/></a>
+        <a href="https://www.pinterest.com/teapittsburgh/">
+            <img src="images/pinterest.png" width="3%" height="3%" alt="Pinterest"/></a>
+    </footer>
+</div>
+</body>
+</html>

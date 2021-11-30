@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jqury ui css -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>
+    <!-- custom css -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <!-- jqury library -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.js"> </script>
+    <script src="js/jquery.lightbox.min.js"></script>
+    <!-- Highcharts library-->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <!-- Highcharts graph -->
+    <script>
+        $(function() {
+            $("#container-graph").highcharts({
+        chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'Select the best time to visit'
+    },
+    subtitle: {
+        text: 'Lower it is, Freer I am'
+    },
+    xAxis: {
+        categories: ['11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm']
+    },
+    yAxis: {
+        title: {
+            text: 'Number of Visits Average Daily'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: false
+        }
+    },
+    series: [{
+        name: 'Monday to Saturday',
+        data: [5,10,8,24,5,7,32,16]
+    }, {
+        name: 'Sunday',
+        data: [0,50,48,25,28,27,0,0]
+    }]
+        });
+    });
+    </script>
+    <!-- Updates Tabs -->
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+            $("#tabs").tabs({
+                event:"mouseover"
+            });
+        });
+    </script>
+    <!-- lightbox gallery-->
+    <script type="text/JavaScript">
+        $(function() {
+            $("#gallery a").lightBox();
+        });
+    </script>
+    <meta charset = "utf-8" />
+    <meta name = "creator" content = "Lucy Li">
+    <meta name = "keywords" content = "Blue Monkey Tea Pittsburgh">
+    <meta name = "description" content = "Blue Monkey Tea Pittsburgh official website">
+    <title>Blue Monkey Tea Pittsburgh</title>
+</head>
+
+<body>
+    <!-- image under public domain license from https://www.publicdomainpictures
+        .net/en/view-image.php?image=268493&picture=herbal-tea -->
+    <header id="cover" style="background-image: url('images/cover.jpg')">
+        <div id="overlay">
+            <h1>Blue Monkey Tea Pittsburgh</h1>
+            <nav>
+                <a class="selected" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="product.html">Product</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    
+<div id="container">
+    <div id="content">
+        <!-- Lightbox Gallery -->
+        <br>
+        <h3>Product Highlight</h3>
+        <div id="gallery">
+            <table id="lightbox">
+                <tr>
+                    <td><a href = "images/belly-be-calm-herbal-loose-leaf-tea-blend-1.jfif" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                        <img src="images/belly-be-calm-herbal-loose-leaf-tea-blend-1.jfif" alt="belly calm loose tea"/>
+                    </a></td>
+                    <td><a href = "images/bone-comfort-herbal-caff-free-loose-leaf-tea-blend-1.jfif" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                        <img src="images/bone-comfort-herbal-caff-free-loose-leaf-tea-blend-1.jfif" alt="bone comfort loose tea"/>
+                    </a></td>
+                    <td><a href = "images/cleanse-refresh-herbal-detox-caff-free-loose-4oz-3.jfif" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                        <img src="images/cleanse-refresh-herbal-detox-caff-free-loose-4oz-3.jfif" alt="refreshing loose tea"/>
+                    </a></td>
+                    <td><a href = "images/belly-be-calm-herbal-loose-leaf-tea-blend-1.jfif" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                        <img src="images/belly-be-calm-herbal-loose-leaf-tea-blend-1.jfif" alt="belly calm loose tea 2"/>
+                    </a></td>
+                </tr>
+            </table>
+        </div>
+        <!-- Update Tabs -->
+        <br>
+        <h3>Updates</h3>
+        <div id="update">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Carnegie location is closed</a></li>
+                    <li><a href="#tabs-2">New Products</a></li>
+                    <li><a href="#tabs-3">New Discounts</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p> We had shops in two locations – one in Pittsburgh 
+                        (Squirrel Hill) and one in Carnegie (South Hills). 
+                        However, we have since closed the Carnegie location. 
+                        We apologise for any inconvenience caused.
+                    </p>
+                </div>
+                <div id="tabs-2">
+                    <li>Vivamus in mauris at augue elementum dignissim.</li>
+                    <li>Proin vel nunc pharetra, feugiat nibh quis, fermentum odio.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                </div>
+                <div id="tabs-3">
+                    <li>Proin vel nunc pharetra, feugiat nibh quis, fermentum odio.</li>
+                    <li>Vivamus in mauris at augue elementum dignissim.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                </div>
+            </div>
+        </div>            
+        <!-- Map Embed -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.
+        6901036959184!2d-79.922385585171!3d40.437860479362605!2m3!1f0!2f0!3f0!3m
+        2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2001a450d9f%3A0xa25015943230019f!
+        2s5872%20Forbes%20Ave%2C%20Pittsburgh%2C%20PA%2015217!5e0!3m2!1sen!2sus!
+        4v1585548518764!5m2!1sen!2sus" width="600" height="450" frameborder="0" 
+        style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe> 
+        <!-- Store Info Table -->
+        <table id="store_info">
+            <tr>
+                <th colspan = "2">Store Information</th>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>5872 Forbes Ave,
+                    Pittsburgh, PA 15217</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>(412) 422-1606</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><a href="mailto:100teacups@gmail.com">100teacups@gmail.com</a></td>
+            </tr>
+            <tr>
+                <th>Website</th>
+                <td>https://www.pittsburghcuppa.com/index.html</td>
+            </tr>
+            <tr>
+                <th>Store Photo</th>
+                <td><img src="images/store.gif" alt="store"/></td>
+            </tr>
+        </table>
+        <!-- Store Hours Table -->
+        <div id="container-graph"></div>
+        <table id="operation_hours">
+            <tr>
+                <th colspan = "2">Store Hours</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td>11AM–7PM</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>11AM–7PM</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>11AM–7PM</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>11AM–7PM</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>11AM–7PM</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td>11AM–7PM</td>
+            </tr>
+            <tr>
+                <th>Sunday</th>
+                <td>12AM–5PM</td>
+            </tr>
+        </table>    
+    </div>
+
+
+
+
+    <footer>
+        &copy; Blue Monkey Tea<br/>
+        <!-- Icons images from free graphic design resource 
+        http://www.newdesignfile.com/post_facebook-twitter-instagram-pinterest-icons_208975/ -->
+        <a href="https://www.facebook.com/TeaPittsburgh/">
+            <img src="images/facebook.png" width="3%" height="3%" alt="Facebook"/></a>
+        <a href="https://www.instagram.com/bluemonkeytea/">
+            <img src="images/instagram.png" width="3%" height="3%" alt="Instagram"/></a>
+        <a href="https://www.pinterest.com/teapittsburgh/">
+            <img src="images/pinterest.png" width="3%" height="3%" alt="Pinterest"/></a>
+    </footer>
+</div>
+</body>
+</html>
